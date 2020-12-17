@@ -1,0 +1,432 @@
+/*Atstarpe starp navigācijas pogām*/
+
+.header-wrapper ul.nav li a {
+    padding: 3px 15px;
+}
+
+
+/* Logo Settings */
+
+#logo {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 0;
+}
+
+#logo img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#logo a {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+
+/* Galvenais logo centrā */
+
+.header-wrapper #logo.logo-center {
+    position: relative;
+    text-align: center;
+    width: 18%;
+}
+
+
+/* Navigācijas josla */
+
+.header-wrapper nav {
+    position: absolute;
+    z-index: 99;
+    display: block;
+    width: 100% !important;
+}
+
+.header-wrapper ul.nav.inline-centered {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-wrapper ul.nav li {
+    display: inline-block;
+}
+
+.header-wrapper ul.nav li a {
+    position: relative;
+    font-family: "Caviar Dreams";
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    height: auto;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-decoration: none;
+    transition: all .5s;
+    border-bottom: 3px solid transparent;
+}
+
+
+/* ============================== */
+
+
+/*iekrāsojums pēc uziešanas ar kursoru*/
+
+.header-wrapper ul.nav li a:hover {
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+    transform: scale(1.5);
+}
+
+
+/* Navigācijas joslas pogas */
+
+.header-wrapper ul.nav li.no-dropdown {
+    position: relative;
+}
+
+
+/* logo novietojums */
+
+.header-wrapper ul.nav.left-side {
+    text-align: left;
+    width: 30%;
+    height: 20%;
+    margin-top: 30px;
+    left: 5%;
+}
+
+
+/*  teksta novietojums */
+
+.header-wrapper ul.nav.right-side {
+    text-align: right;
+    height: 20%;
+    margin-top: 30px;
+    width: 60%;
+    right: 5%;
+}
+
+
+/*===============*/
+
+
+/* Uzejot uz ikonas, kāda līnija parādas */
+
+.header-wrapper ul.right-side li a:after {
+    content: "";
+    height: 0px;
+    background-color: white;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .5s;
+}
+
+.header-wrapper ul.right-side li:hover a:after {
+    content: "";
+    height: 0px;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .5s;
+}
+
+.header-wrapper nav:after {
+    content: "";
+    border-bottom: 1px solid white;
+    position: absolute;
+    bottom: -15%;
+    left: 0;
+    width: 100%!important;
+}
+
+
+/* Mobile */
+
+
+/* Pogas izskats, lai atvērtu sidebar */
+
+#bar-1,
+#bar-2,
+#bar-3 {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+#bar-2 {
+    width: 20px;
+}
+
+
+/* ========================== */
+
+
+/* Sidebar */
+
+.nav-mobile-open,
+.dropdown-content {
+    list-style: none;
+}
+
+.nav-mobile-open {
+    margin-top: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-right: 2px solid black;
+    overflow-x: hidden;
+    transition: 1s;
+    padding-top: 60px;
+}
+
+
+/* ======================== */
+
+
+/* Sidebar teksta/pogu izskats */
+
+.under-line {
+    position: relative;
+    height: 3px;
+    width: 90%;
+    background-color: black;
+    left: 5%;
+}
+
+.sub-under-line {
+    position: relative;
+    height: 3px;
+    width: 45%;
+    background-color: black;
+    left: 5%;
+}
+
+.mobile-sidebar-level h1,
+h2,
+.dropbtn {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    margin: 0;
+    transition: all 2s;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 2em;
+}
+
+.mobile-sidebar-level h2 {
+    font-size: 20px;
+}
+
+.mobile-sidebar-level h1:hover {
+    color: white;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.closebtn:hover {
+    color: white;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:focus {
+    outline: none;
+}
+
+.dropbtn {
+    background-color: white;
+    color: black;
+    text-align: left;
+    width: 100%;
+    padding: 8px 8px 8px 32px;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.dropbtn:focus {
+    outline: none
+}
+
+
+/* ================== */
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+
+/* nelielais ķeksītis navbar */
+
+#mob-nav {
+    position: relative;
+    right: -60%
+}
+
+#pc-nav {
+    position: relative;
+    left: 20%
+}
+
+
+/* Shop dropdown */
+
+.dropdown {
+    position: relative;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: white;
+    width: 99%;
+    padding: 10px;
+    overflow: auto;
+    border: 1px solid black;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+    z-index: 1;
+}
+
+
+/* dropdown teksta izskats */
+
+.mobile-second-level {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.mobile-second-level h2:hover {
+    color: #8d8d8d;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+.show {
+    display: block;
+}
+
+
+/* ===================== */
+
+
+/* Media */
+
+@media screen and (max-width:500px) {
+    .fa-angle-down {
+        position: absolute;
+        right: -15%
+    }
+    header {
+        display: none;
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:739px) {
+    .fa-angle-down {
+        position: absolute;
+        right: -50%
+    }
+    header {
+        display: none;
+    }
+}
+
+@media screen and (min-width:740px) and (max-width:979px) {
+    .sidebar,
+    #main {
+        /* width: 720px; */
+        display: none;
+    }
+}
+
+@media screen and (min-width:980px) and (max-width:1219px) {
+    .sidebar,
+    #main {
+        /* width: 960px; */
+        display: none;
+    }
+}
+
+@media screen and (min-width:1220px) and (max-width:1679px) {
+    .sidebar,
+    #main {
+        /* width: 1200px; */
+        display: none;
+    }
+}
+
+@media screen and (min-width:1680px) {
+    .sidebar,
+    #main {
+        /* width: 1480px; */
+        display: none;
+    }
+    .header-wrapper nav {
+        height: 10%;
+    }
+}
+
+#space-between {
+    height: 100px;
+}
+
+.social-sidebar {
+    position: relative;
+    list-style: none;
+    width: 80%;
+    left: calc(50% - 40%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.icon-sidebar {
+    text-align: center;
+}
